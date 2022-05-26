@@ -1,0 +1,237 @@
+<style>
+  .breadcrumbs {
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .breadcrumb-title {
+    font-size: 3.6rem;
+  }
+  
+  .breadcrumb-title p {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+  }
+  
+  .breadcrumbs-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumbs-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  {% comment %} .breadcrumbs-item:not(:last-child):after {
+    content: '>';
+    display: inline-block;
+    margin: 0 .2rem;
+    font-size: .16rem;
+  } {% endcomment %}
+
+  .breadcrumbs-item:not(:last-child) .breadcrumbs-icon {
+    display: inline-block;
+  }
+
+  .breadcrumbs-link {
+    text-decoration: solid;
+    vertical-align: middle;
+    color: #333;
+  }
+
+  .breadcrumbs-icon {
+    display: none;
+    margin: 0 1rem;
+    vertical-align: middle;
+  }
+
+  .breadcrumbs-link[aria-current="page"] {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  .breadcrumbs-link[aria-current="page"]:hover,
+  .breadcrumbs-link[aria-current="page"]:focus {
+    text-decoration: underline;
+  }
+</style>
+
+<nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+  <div class="breadcrumb-title">
+    {% for link in linklists.main-menu.links %}
+      {%- if link.current or link.child_current -%}
+        <p>{{ link.title }}</p>
+
+        {% for child_link in link.links %}
+          {%- if child_link.current or child_link.child_current -%}
+            <p>{{ child_link.title }}</p>
+
+            {% for grandchild_link in child_link.links %}
+              {%- if grandchild_link.current or grandchild_link.child_current -%}
+                <p>{{ grandchild_link.title }}</p>
+  
+                {% for grand_child_child_link in grandchild_link.links %}
+                  {%- if grand_child_child_link.current or grand_child_child_link.child_current -%}
+                    <p>{{ grand_child_child_link.title }}</p>
+      
+                  {%- endif -%}
+                {% endfor %}
+              {%- endif -%}
+            {% endfor %}
+          {%- endif -%}
+        {% endfor %}
+      {%- endif -%}
+    {% endfor %}
+  </div>
+
+  <ol class="breadcrumbs-list">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="/" aria-current="page">Home</a>
+      <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+    </li>
+    {% for link in linklists.main-menu.links %}
+      {%- if link.current or link.child_current -%}
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="{{ link.url }}" aria-current="page">{{ link.title }}</a>
+          <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+        </li>
+
+        {% for child_link in link.links %}
+          {%- if child_link.current or child_link.child_current -%}
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="{{ child_link.url }}" aria-current="page">{{ child_link.title }}</a>
+              <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+            </li>
+
+            {% for grandchild_link in child_link.links %}
+              {%- if grandchild_link.current or grandchild_link.child_current -%}
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="{{ grandchild_link.url }}" aria-current="page">{{ grandchild_link.title }}</a>
+                  <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+                </li>
+  
+                {% for grand_child_child_link in grandchild_link.links %}
+                  {%- if grand_child_child_link.current or grand_child_child_link.child_current -%}
+                    <li class="breadcrumbs-item">
+                      <a class="breadcrumbs-link" href="{{ grand_child_child_link.url }}" aria-current="page">{{ grand_child_child_link.title }}</a>
+                      <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+                    </li>
+      
+                  {%- endif -%}
+                {% endfor %}
+              {%- endif -%}
+            {% endfor %}
+          {%- endif -%}
+        {% endfor %}
+      {%- endif -%}
+    {% endfor %}
+  </ol>
+</nav>
+
+{% comment %} {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+{%- assign t = template | split: '.' | first -%}
+
+<nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+  <ol class="breadcrumbs-list">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="/" aria-current="page">Home</a>
+      <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+    </li>
+    {%- case t -%}
+      {%- when 'page' -%}
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+          <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+          <div>page:{{ page }}</div>
+        </li>
+      {%- when 'product' -%}
+        {%- if collection.url -%}
+          <li class="breadcrumbs-item">
+            {{ collection.title | link_to: collection.url }}
+            <div>collection:{{ collection }}</div>
+          </li>
+        {%- endif -%}
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+          <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+          <div>product:{{ product }}</div>
+        </li>
+      {%- when 'collection' and collection.handle -%}
+        {%- if current_tags -%}
+          <li class="breadcrumbs-item">
+            {{ collection.title | link_to: collection.url }}
+            <div>collection1:{{ collection.current_type }}</div>
+          </li>
+          <li class="breadcrumbs-item">
+            {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+            <a class="breadcrumbs-link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+            <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+            <div>collection2:{{ current_tags }}</div>
+          </li>
+        {%- else -%}
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+            <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+            <div>collection3:{{ collection }}</div>
+          </li>
+        {%- endif -%}
+      {%- when 'blog' -%}
+        {%- if current_tags -%}
+          <li class="breadcrumbs-item">
+            {{ blog.title | link_to: blog.url }}
+            <div>blog:{{ blog }}</div>
+          </li>
+          <li class="breadcrumbs-item">
+            {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+            <a class="breadcrumbs-link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+            <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+            <div>blog2:{{ blog }}</div>
+          </li>
+        {%- else -%}
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+            <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+            <div>blog3:{{ blog }}</div>
+          </li>
+        {%- endif -%}
+      {%- when 'article' -%}
+        <li class="breadcrumbs-item">
+          {{ blog.title | link_to: blog.url }}
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+          <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+          <div>article:{{ article }}</div>
+        </li>
+      {%- else -%}
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+          <svg class="breadcrumbs-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 1L5.5 6.5L1 12" stroke="#BDBDBD"></path></svg>
+          <div>article2:{{ article }}</div>
+        </li>
+    {%- endcase -%}
+  </ol>
+</nav>
+{%- endunless -%} {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Custom Breadcrumbs",
+    "class": "custom-section",
+    "settings": [
+      
+    ],
+    "blocks": [
+      
+    ],
+    "presets": [{
+      "name": "Custom Breadcrumbs",
+      "blocks": [
+        
+      ]
+    }]
+  }
+{% endschema %}

@@ -1,0 +1,76 @@
+.order .fulfillment .logistics-box {
+  display: flex;
+  align-items: center;
+
+  .logistics-icon {
+    margin-right: 1rem;
+    width: 5rem;
+    height: auto;
+  }
+}
+
+.order table .logistics-updates-btn {
+  margin: 1rem 0;
+  text-decoration: underline;
+  vertical-align: middle;
+  cursor: pointer;
+
+  .logistics-updates-icon {
+    width: 1.6rem;
+    vertical-align: middle;
+    fill: #333;
+  }
+
+  &.logistics-updates-open {
+    .logistics-updates-icon {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.im-track-box {
+  display: none;
+
+  .im-track-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    &:last-child::before {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 7.5rem;
+      width: 2px;
+      height: 100%;
+      background: #999
+    }
+
+    .im-track-date {
+      width: 5rem;
+      font-size: 1.4rem;
+    }
+
+    .im-track-line-point {
+      display: block;
+      margin: 0 2rem;
+      border: .2rem solid #ccc;
+      border-radius: 50%;
+      width: 1.2rem;
+      height: 1.2rem;
+      background: #fff;
+      z-index: 2;
+    }
+
+
+    .im-track-content {
+      flex: 1;
+      font-size: 1.4rem;
+    }
+  }
+}
