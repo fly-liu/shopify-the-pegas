@@ -1,0 +1,7 @@
+# 使用非 Shopify 域名获取资产
+RemoteAsset:
+  enabled: false
+
+# img 标签上缺少宽度和高度属性
+ImgWidthAndHeight:
+  enabled: false
