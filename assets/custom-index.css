@@ -1391,6 +1391,7 @@ button.swiper-pagination-bullet {
 }
 
 .company .company-control .indicate .line {
+  display: block;
   width: 74px;
   height: 1px;
   margin: 0 12px;
