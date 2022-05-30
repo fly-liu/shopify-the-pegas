@@ -239,7 +239,7 @@
                 <p class="title">Vision Capital</p>
                 <div class="block"></div>
                 <p class="content">The biggest Chinese conglomerate. Worldwide class investor with ~$93B assets, including Lavin, ClubMed, and Palazzo Broggietc. #416 on 2018 Forbs Top 2000 company.</p>
-                <a href="https://www.fosun.com/" target="_blank" class="btn">
+                <a href="https://en.fosun.com" target="_blank" class="btn">
                   <div class="mask"></div>
                   <div class="text">More →</div>
                 </a>
@@ -257,7 +257,7 @@
                 <p class="title">Vision Capital</p>
                 <div class="block"></div>
                 <p class="content">Founded in 2015. The team members consist of founding members from Alibaba. Manage $1B funding.</p>
-                <a href="http://www.vplus.vc/" target="_blank" class="btn">
+                <a href="https://visionpluscapital.com/en/" target="_blank" class="btn">
                   <div class="mask"></div>
                   <div class="text">More →</div>
                 </a>
@@ -275,7 +275,7 @@
                 <p class="title">HILLHOUSE</p>
                 <div class="block"></div>
                 <p class="content">One of the largest investors in Asia’s asset management area. Invest Baidu, Tencent, Jindong, Didi, Uber, Meituan, etc.</p>
-                <a href="http://www.hillhousecap.com/cn/" target="_blank" class="btn">
+                <a href="https://www.hillhouseinvestment.com" target="_blank" class="btn">
                   <div class="mask"></div>
                   <div class="text">More →</div>
                 </a>
@@ -291,7 +291,7 @@
                 <p class="title">BLUELAKE Capital</p>
                 <div class="block"></div>
                 <p class="content">Top 50 of China VC. Founded research-driven venture capital firm. Managed $700M USD and RMB funds.</p>
-                <a href="http://www.bluelakecap.com/" target="_blank" class="btn">
+                <a href="https://www.bluelakecap.com/en" target="_blank" class="btn">
                   <div class="mask"></div>
                   <div class="text">More →</div>
                 </a>
@@ -445,7 +445,7 @@
         <p class="title">FOSUN Group</p>
         <p class="content">
           The biggest Chinese conglomerate. Worldwide class investor with ~$93B assets, including Lavin, ClubMed, and Palazzo Broggietc. #416 on 2018 Forbs Top 2000 company.</p>
-        <a href="https://www.fosun.com/" target="_blank" class="detail">More →</a>
+        <a href="https://en.fosun.com" target="_blank" class="detail">More →</a>
       </div>
       <div class="investor-item">
         <div class="investor-logo">
@@ -456,7 +456,7 @@
         <p class="title" style="display:none">Vision Capital</p>
         <p class="content" style="display:none">
           Founded in 2015. The team members consist of founding members from Alibaba. Manage $1B funding.</p>
-        <a href="http://www.vplus.vc/" target="_blank" class="detail" style="display:none">More →</a>
+        <a href="https://visionpluscapital.com/en/" target="_blank" class="detail" style="display:none">More →</a>
       </div>
       <div class="investor-item">
         <div class="investor-logo">
@@ -467,7 +467,7 @@
         <p class="title" style="display:none">HILLHOUSE</p>
         <p class="content" style="display:none">
           One of the largest investors in Asia’s asset management area. Invest Baidu, Tencent, Jindong, Didi, Uber, Meituan, etc.</p>
-        <a href="http://www.hillhousecap.com/cn/" target="_blank" class="detail" style="display:none">More →</a>
+        <a href="https://www.hillhouseinvestment.com" target="_blank" class="detail" style="display:none">More →</a>
       </div>
       <div class="investor-item">
         <div class="investor-logo">
@@ -478,7 +478,7 @@
         <p class="title" style="display:none">Bluelake Capital</p>
         <p class="content" style="display:none">
           Top 50 of China VC. Founded research-driven venture capital firm. Managed $700M USD and RMB funds.</p>
-        <a href="http://www.bluelakecap.com/" target="_blank" class="detail" style="display:none">More →</a>
+        <a href="https://www.bluelakecap.com/en" target="_blank" class="detail" style="display:none">More →</a>
       </div>
     </div>
   </div>
@@ -495,10 +495,24 @@ function isOnVisibleScreen(dom){
 };
 
 function changeBtn() {
+  var scrollTop = $(window).scrollTop()
+  var ratio = 0.05;
+  var topNum = 50;
+  var bottomNum = -10;
+  
+  var positionY1 = 0;
+  var Y1 = 0;
+
+  var positionY2 = 0;
+  var Y2 = 0;
+
   var slogan = $('#layout-pc .slogan:eq(0)')
   var moduleTitle = $('#layout-pc .module-title:eq(0)')
-  {% comment %} var about = $('#layout-pc .about-container') {% endcomment %}
+  var about = $('#layout-pc .about-container')
+  var servicesTop = $('#layout-pc .services-top')
   var union = $('#layout-pc .union')
+  var servicesBg = $('.services-bg')
+  var investorsList = $('.investors-list')
 
   if (isOnVisibleScreen(slogan)) {
     slogan.show()
@@ -512,24 +526,59 @@ function changeBtn() {
     moduleTitle.children('h2').hide()
   }
 
-  {% comment %} if (isOnVisibleScreen(about)) {
+  if (isOnVisibleScreen(about)) {
     about.children('.about').show()
   } else {
     about.children('.about').hide()
-  } {% endcomment %}
+  }
+
+  if (isOnVisibleScreen(servicesTop)) {
+    servicesTop.children('.services-list').show()
+  } else {
+    servicesTop.children('.services-list').hide()
+  }
 
   if (isOnVisibleScreen(union)) {
     union.children().show()
   } else {
     union.children().hide()
   }
+  
+  Y1 = servicesBg.offset().top * ratio;
+  positionY1 = Y1 - scrollTop * ratio; //原始高度-滚动距离*视差系数
+  if(positionY1 > topNum) {
+    positionY1 = topNum
+  }
+  if(positionY1 < bottomNum) {
+    positionY1 = bottomNum
+  }
+  servicesBg.children('img').css('transform', 'translateY('+ positionY1 + 'px)');
+
+  Y2 = investorsList.offset().top * ratio;
+  positionY2 = Y2 - scrollTop * ratio; //原始高度-滚动距离*视差系数
+  if(positionY2 > topNum) {
+    positionY2 = topNum
+  }
+  if(positionY2 < bottomNum) {
+    positionY2 = bottomNum
+  }
+  investorsList.css('background-position-y', positionY2 + 'px');
 }
 
 window.onload = function() {
+  var timer = null;
   var isPc = 768 < $(window).width();
   if(isPc) {
     // PC
-    $(window).scroll(changeBtn);
+    $(window).scroll(function() {
+      if(timer){
+        clearTimeout(timer);
+      }
+    
+      timer = setTimeout(function() {
+        changeBtn()
+      }, 100);
+    });
     
     var servicesWrap = new Swiper('.company-list', {
       autoplay: 3000,
