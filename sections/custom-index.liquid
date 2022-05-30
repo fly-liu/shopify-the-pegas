@@ -19,8 +19,8 @@
     <div id="about" class="module-padding"></div>
   
     <div class="module-title">
-      <span class="bg">About Us</span>
-      <h2 class="fade-in-enter-active">About Us</h2>
+      <span class="bg" style="display:none">About Us</span>
+      <h2 class="fade-in-enter-active" style="display:none">About Us</h2>
     </div>
   
     <div class="container about-container">
@@ -42,32 +42,30 @@
       <div class="services-top">
         <div class="services-bg"><img width="2304" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services-bg.png" alt loading="lazy"></div>
         <div class="container services-list fade-in-enter-active">
-          <div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide services-item">
-                <div class="services-left">
-                  <div class="no">01</div>
-                  <p class="title">Top Brand</p>
-                  <p class="subtitle">1,000+ Fashion Brands, 500,000 Products Onsale</p>
-                </div>
-                <img width="645" height="340" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services01.png" alt="" loading="lazy">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide services-item">
+              <div class="services-left">
+                <div class="no">01</div>
+                <p class="title">Top Brand</p>
+                <p class="subtitle">1,000+ Fashion Brands, 500,000 Products Onsale</p>
               </div>
-              <div class="swiper-slide services-item">
-                <div class="services-left">
-                  <div class="no">02</div>
-                  <p class="title">Real-time Stock Globally European Price</p>
-                  <p class="subtitle">Exclusive Galileo system to keep global product stock update in real-time, 24/7 year around.</p>
-                </div>
-                <img width="645" height="340" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services02.png" alt="" loading="lazy">
+              <img width="645" height="340" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services01.png" alt="" loading="lazy">
+            </div>
+            <div class="swiper-slide services-item">
+              <div class="services-left">
+                <div class="no">02</div>
+                <p class="title">Real-time Stock Globally European Price</p>
+                <p class="subtitle">Exclusive Galileo system to keep global product stock update in real-time, 24/7 year around.</p>
               </div>
-              <div class="swiper-slide services-item">
-                <div class="services-left">
-                  <div class="no">03</div>
-                  <p class="title">Customized International Express</p>
-                  <p class="subtitle">DHL, UPS customized logistics solutions with real-time track & track online</p>
-                </div>
-                <img width="645" height="340" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services03.png" alt="" loading="lazy">
+              <img width="645" height="340" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services02.png" alt="" loading="lazy">
+            </div>
+            <div class="swiper-slide services-item">
+              <div class="services-left">
+                <div class="no">03</div>
+                <p class="title">Customized International Express</p>
+                <p class="subtitle">DHL, UPS customized logistics solutions with real-time track & track online</p>
               </div>
+              <img width="645" height="340" src="https://im-shopify.s3.amazonaws.com/valise-web/pc/services03.png" alt="" loading="lazy">
             </div>
           </div>
         </div>
@@ -521,9 +519,9 @@ function changeBtn() {
   }
 
   if (isOnVisibleScreen(moduleTitle)) {
-    moduleTitle.children('h2').show()
+    moduleTitle.children().show()
   } else {
-    moduleTitle.children('h2').hide()
+    moduleTitle.children().hide()
   }
 
   if (isOnVisibleScreen(about)) {
@@ -571,16 +569,28 @@ window.onload = function() {
   if(isPc) {
     // PC
     $(window).scroll(function() {
-      if(timer){
+      {% comment %} if(timer){
         clearTimeout(timer);
-      }
+      } {% endcomment %}
     
-      timer = setTimeout(function() {
+      {% comment %} timer = setTimeout(function() {
         changeBtn()
-      }, 100);
+      }, 100); {% endcomment %}
+      changeBtn()
     });
     
-    var servicesWrap = new Swiper('.company-list', {
+    var servicesList = new Swiper('.services-list', {
+      loop:true
+    });
+
+    $('.services-control-item').click(function(){
+      let index = $(this).index()
+      $('.services-control-item').children('.title').removeClass('active');
+      $(this).children('.title').addClass('active');
+      servicesList.slideTo(index+1, 500, false); 
+    })
+
+    var companyList = new Swiper('.company-list', {
       autoplay: 3000,
       slidesPerView: 'auto',
       centeredSlides: true,

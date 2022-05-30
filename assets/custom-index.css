@@ -927,7 +927,8 @@ button.swiper-pagination-bullet {
 }
 
 .banner {
-  height: 74.5vh;
+  /* height: 74.5vh; */
+  height: 775px;
   background: url(https://cdn.shopifycdn.net/s/files/1/0642/3363/6091/files/banner.png?v=1653795554) 0 85px no-repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -1562,8 +1563,8 @@ button.swiper-pagination-bullet {
 }
 
 .fade-in-enter-active {
-  -webkit-animation: banner-logo 1s cubic-bezier(.23, 1, .32, 1);
-  animation: banner-logo 1s cubic-bezier(.23, 1, .32, 1)
+  -webkit-animation: banner-logo .5s cubic-bezier(.23, 1, .32, 1);
+  animation: banner-logo .5s cubic-bezier(.23, 1, .32, 1)
 }
 
 @-webkit-keyframes banner-logo {
