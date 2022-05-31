@@ -1066,8 +1066,15 @@ button.swiper-pagination-bullet {
 
 .company-slide {
   width: 82.667vw;
+  height: 97.5vw;
   padding-bottom: 20.133vw;
+  overflow: hidden;
   z-index: 10
+}
+
+.company-slide img {
+  width: auto;
+  height: 100%;
 }
 
 .company-slide .company-bottom {
