@@ -928,8 +928,8 @@ button.swiper-pagination-bullet {
 
 .banner {
   position: relative;
-  height: 775px;
-  /* height: 700px; */
+  /* height: 775px; */
+  height: 700px;
   background: linear-gradient(to right, #f0f0ee ,#f0f0ee ,#eeeeec,#ebece9,#efefed,#f7f7f5,#f5f5f2 , #ebece9, #ecedea, #ecedea);
 }
 
