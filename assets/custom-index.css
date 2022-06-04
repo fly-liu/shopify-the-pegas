@@ -16,6 +16,11 @@
   src: url(SourceHanSansCNLight.woff) format("woff"), url(SourceHanSansCNLight.ttf) format("truetype"), url(SourceHanSansCNLight.svg) format("svg")
 }
 
+@font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url(SourceHanSansCN-Regular.otf);
+}
+
 @media screen and (min-width:769px) {
   #layout-pc {
     display: block;
@@ -998,6 +1003,7 @@ button.swiper-pagination-bullet {
   display: inline-block;
   margin-top: 28px;
   font-size: 36px;
+  font-family: SourceHanSansCN-Regular;
   font-weight: 500
 }
 
@@ -1023,7 +1029,7 @@ button.swiper-pagination-bullet {
 
 .about-container {
   padding-top: 65px;
-  padding-left: 480px;
+  padding-left: 470px;
   min-height: 320px;
   box-sizing: border-box;
 }
@@ -1033,7 +1039,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   font-weight: 300;
   line-height: 26px;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .services-top {
@@ -1112,7 +1118,7 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   line-height: 22px;
   letter-spacing: 1px;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .services-top .services-item .services-left .content {
@@ -1120,7 +1126,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   font-weight: 300;
   line-height: 26px;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .services-list {
@@ -1174,7 +1180,8 @@ button.swiper-pagination-bullet {
   margin-top: 50px;
   font-size: 18px;
   line-height: 25px;
-  font-weight: 300
+  font-family: SourceHanSansCN-Regular;
+  font-weight: 300;
 }
 
 .services-control .services-control-item .title.active {
@@ -1229,7 +1236,7 @@ button.swiper-pagination-bullet {
   line-height: 26px;
   letter-spacing: 1px;
   font-weight: 300;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .union .btn-inner {
@@ -1252,7 +1259,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .union .total .num {
@@ -1277,12 +1284,12 @@ button.swiper-pagination-bullet {
 }
 
 .company .content {
-  margin-left: 488px;
+  margin-left: 480px;
   color: #333;
   font-size: 14px;
   line-height: 26px;
   font-weight: 300;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .company .c1 {
@@ -1317,6 +1324,7 @@ button.swiper-pagination-bullet {
   padding: 25px 0 25px 60px;
   margin-top: -52px;
   margin-left: 20px;
+  font-family: SourceHanSansCN-Regular;
   color: #333;
   box-shadow: 0 3px 20px rgba(0, 0, 0, .09);
   background-color: #fff
@@ -1343,7 +1351,8 @@ button.swiper-pagination-bullet {
 .company .company-bottom .subtitle {
   margin-top: 12px;
   font-size: 18px;
-  font-weight: 600;
+  font-family: SourceHanSansCN-Bold;
+  font-weight: bold;
   line-height: 25px
 }
 
@@ -1428,7 +1437,7 @@ button.swiper-pagination-bullet {
   margin-top: 25px;
   text-align: center;
   font-weight: 300;
-  font-family: SourceHanSansCN-Light
+  font-family: SourceHanSansCN-Regular
 }
 
 .investors .investors-list {
@@ -1482,6 +1491,8 @@ button.swiper-pagination-bullet {
   margin-top: 131px;
   color: #000;
   font-size: 20px;
+  font-family: SourceHanSansCN-Bold;
+  font-weight: bold;
   text-align: center;
   line-height: 28px
 }
@@ -1546,7 +1557,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   font-size: 14px;
   font-weight: 300;
-  font-family: SourceHanSansCN-Light;
+  font-family: SourceHanSansCN-Regular;
   line-height: 22px
 }
 

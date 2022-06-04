@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url(SourceHanSansCN-Regular.otf);
+}
+
+@font-face {
   font-family: CeraPRO-Bold;
   src: url(CeraPROBold.eot);
   src: url(CeraPROBold.woff) format("woff"), url(CeraPROBold.ttf) format("truetype"), url(CeraPROBold.svg) format("svg")
@@ -45,7 +50,7 @@
   color: #222;
   font-size: 3.467vw;
   line-height: 1;
-  font-family: SourceHanSansCN-Light;
+  font-family: SourceHanSansCN-Regular;
   background-color: #fff;
 }
 
@@ -863,7 +868,7 @@ button.swiper-pagination-bullet {
   color: #fff;
   font-size: 4.267vw;
   font-weight: 700;
-  font-family: SourceHanSansCN-Bold;
+  font-family: SourceHanSansCN-Regular;
   line-height: 6vw;
   text-align: center;
   letter-spacing: 1.067vw;
@@ -904,7 +909,7 @@ button.swiper-pagination-bullet {
   margin-top: 2.267vw;
   font-size: 4.267vw;
   font-weight: 500;
-  font-family: SourceHanSansCN-Bold;
+  font-family: SourceHanSansCN-Regular;
   line-height: 6vw
 }
 
@@ -992,7 +997,7 @@ button.swiper-pagination-bullet {
   font-size: 4.8vw;
   line-height: 6.667vw;
   font-weight: 600;
-  font-family: SourceHanSansCN-Bold
+  font-family: SourceHanSansCN-Regular
 }
 
 .services-slide .services-bottom .subtitle {
@@ -1115,7 +1120,7 @@ button.swiper-pagination-bullet {
   color: #333;
   font-size: 4.267vw;
   font-weight: 600;
-  font-family: SourceHanSansCN-Bold;
+  font-family: SourceHanSansCN-Regular;
   line-height: 6vw
 }
 
@@ -1205,7 +1210,7 @@ button.swiper-pagination-bullet {
   color: #fff;
   text-align: center;
   line-height: 11.733vw;
-  font-family: none;
+  font-family: SourceHanSansCN-Regular;
   border: 1px solid hsla(0, 0%, 100%, .6)
 }
 
