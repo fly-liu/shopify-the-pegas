@@ -2,6 +2,7 @@
   "sections": {
     "165381828200a6f4ae": {
       "type": "custom-index",
+      "disabled": true,
       "settings": {
       }
     },
@@ -33,6 +34,33 @@
         "padding_bottom": 36
       }
     },
+    "16542981657da7dce1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "22SS New Arrival",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrival",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -45,7 +73,7 @@
         "product": {
           "type": "product",
           "settings": {
-            "product": "5538915",
+            "product": "17705029",
             "second_image": true
           }
         },
@@ -112,39 +140,105 @@
         "padding_bottom": 36
       }
     },
-    "16542981657da7dce1": {
-      "type": "featured-collection",
+    "165527334746bf979d": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "1655273346dc4318b4-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "1655273346dc4318b4-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "1655273346dc4318b4-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655273346dc4318b4-0",
+        "1655273346dc4318b4-1",
+        "1655273346dc4318b4-2"
+      ],
       "settings": {
-        "title": "22SS New Arrival",
+        "heading": "Multimedia collage",
         "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-arrival",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "1655273782dfb5557d": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "1655273782a935e16b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "1655273782a935e16b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "1655273782a935e16b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "About US",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1655273782a935e16b-0",
+        "1655273782a935e16b-1",
+        "1655273782a935e16b-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
     "165381828200a6f4ae",
     "featured_collection",
+    "16542981657da7dce1",
     "collage",
     "16542981431db10292",
-    "16542981657da7dce1"
+    "165527334746bf979d",
+    "1655273782dfb5557d"
   ]
 }
