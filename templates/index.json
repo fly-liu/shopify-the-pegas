@@ -34,6 +34,60 @@
         "padding_bottom": 36
       }
     },
+    "165527424347119651": {
+      "type": "slideshow",
+      "blocks": {
+        "16552742430442e044-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner.png",
+            "heading": "Resonate Aesthetic Worldwide",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "About Us",
+            "link": "shopify:\/\/pages\/about-us",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "16552742430442e044-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16552742430442e044-0",
+        "16552742430442e044-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "16542981657da7dce1": {
       "type": "featured-collection",
       "settings": {
@@ -219,6 +273,7 @@
         "1655273782a935e16b-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/WX20220614-231357_2x_8801f963-17d1-4e3b-8eae-ae9d966f3575.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -230,15 +285,28 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "16552742017fda1e2b": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "page": "about-us",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "165381828200a6f4ae",
     "featured_collection",
+    "165527424347119651",
     "16542981657da7dce1",
     "collage",
     "16542981431db10292",
     "165527334746bf979d",
-    "1655273782dfb5557d"
+    "1655273782dfb5557d",
+    "16552742017fda1e2b"
   ]
 }
