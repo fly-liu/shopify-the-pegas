@@ -327,12 +327,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "1594593a-15d8-4c39-a2d9-80f545ac074f": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "16553179091dffb61d-0",
         "16553179091dffb61d-1",
-        "16553179091dffb61d-2"
+        "16553179091dffb61d-2",
+        "1594593a-15d8-4c39-a2d9-80f545ac074f"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -371,18 +381,73 @@
           "settings": {
             "collection": "women-accessories"
           }
+        },
+        "7448d952-7de2-4615-b510-c1c66c4000f1": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "1655319106b4871ec4-0",
         "1655319106b4871ec4-1",
-        "1655319106b4871ec4-2"
+        "1655319106b4871ec4-2",
+        "7448d952-7de2-4615-b510-c1c66c4000f1"
       ],
       "settings": {
         "title": "Women's Fashion",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1655319129de481c85": {
+      "type": "collection-list",
+      "blocks": {
+        "16553191294232d77c-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men-clothing"
+          }
+        },
+        "16553191294232d77c-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men-shoes"
+          }
+        },
+        "16553191294232d77c-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men-bags"
+          }
+        },
+        "91571460-3515-4482-996c-d5b9ef689e07": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "16553191294232d77c-0",
+        "16553191294232d77c-1",
+        "16553191294232d77c-2",
+        "91571460-3515-4482-996c-d5b9ef689e07"
+      ],
+      "settings": {
+        "title": "Men's Fashion",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
         "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "1",
@@ -403,6 +468,7 @@
     "1655273782dfb5557d",
     "16552742017fda1e2b",
     "1655317909f79139fb",
-    "165531910625f4ddcd"
+    "165531910625f4ddcd",
+    "1655319129de481c85"
   ]
 }
