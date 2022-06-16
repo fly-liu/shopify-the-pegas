@@ -90,6 +90,7 @@
     },
     "16542981657da7dce1": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "22SS New Arrival",
         "heading_size": "h1",
@@ -110,6 +111,53 @@
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16553533042bf4538b": {
+      "type": "collection-list",
+      "blocks": {
+        "1655353304e51fe5b2-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alexander-wang-22ss"
+          }
+        },
+        "1655353304e51fe5b2-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "saint-laurent-22ss"
+          }
+        },
+        "1655353304e51fe5b2-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "amiri-22ss"
+          }
+        },
+        "2eec60b0-04f5-4305-9729-9ef4939c691b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "miu-miu-22ss"
+          }
+        }
+      },
+      "block_order": [
+        "1655353304e51fe5b2-0",
+        "1655353304e51fe5b2-1",
+        "1655353304e51fe5b2-2",
+        "2eec60b0-04f5-4305-9729-9ef4939c691b"
+      ],
+      "settings": {
+        "title": "Enjoy New Arrivals",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -521,6 +569,7 @@
     "featured_collection",
     "165527424347119651",
     "16542981657da7dce1",
+    "16553533042bf4538b",
     "collage",
     "16542981431db10292",
     "165527334746bf979d",
