@@ -34,21 +34,35 @@
         "padding_bottom": 36
       }
     },
+    "165533784174f1ef01": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https:\/\/youtu.be\/qznR-VxHiko",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "165527424347119651": {
       "type": "slideshow",
       "blocks": {
         "16552742430442e044-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner.png",
-            "heading": "Resonate Aesthetic Worldwide",
-            "heading_size": "h1",
+            "image": "shopify:\/\/shop_images\/Untitled_design_3.png",
+            "heading": "",
+            "heading_size": "h2",
             "subheading": "",
-            "button_label": "About Us",
-            "link": "shopify:\/\/pages\/about-us",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/new-arrival",
             "button_style_secondary": false,
             "box_align": "middle-left",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
@@ -460,6 +474,7 @@
   "order": [
     "165381828200a6f4ae",
     "featured_collection",
+    "165533784174f1ef01",
     "165527424347119651",
     "16542981657da7dce1",
     "collage",
