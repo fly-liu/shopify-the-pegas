@@ -141,6 +141,8 @@
                       </p>
                       <ul class="im-track-box">
                         {% assign imTrack_list = order_track.imTrack %}
+                    <div>{{ imTrack_list }}</div>
+                      
                         {%- for imTrack in imTrack_list -%}
                           <li class="im-track-item">
                             <p class="im-track-date">{{ imTrack.time | date: "%m-%d %H:%M" }}</p>
