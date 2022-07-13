@@ -113,7 +113,6 @@
 
                   <!-- custom -->
                   {% assign order_tracking_list = order.metafields.my_fields.tracking_detail %}
-                  <div>{{ order_tracking_list }}</div>
                   {%- if order_tracking_list != blank -%}
                     {%- for order_track in order_tracking_list.value -%}
                     <div class="fulfillment">
