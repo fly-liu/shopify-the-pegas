@@ -114,43 +114,45 @@
                   <!-- custom -->
                   {% assign order_tracking_list = order.metafields.my_fields.tracking_detail %}
                   {%- if order_tracking_list != blank -%}
-                    {%- for order_track in order_tracking_list -%}                      
-                    <div class="fulfillment">
-                      {%- assign created_at = order_track.createDate | time_tag: format: 'date' -%}
-                      <span>{{ 'customer.order.fulfilled_at_html' | t: date: created_at }}</span>
-
-                      {%- if order_track.linkUrl -%}
-                        <a href="{{ order_track.linkUrl }}" target="_blank">
-                          {{ 'customer.order.track_shipment' | t }}
-                        </a>
-                      {%- endif -%}
-
-                      {%- if order_track.logisticsName -%}
-                        <div class="logistics-box">
-                          {%- if order_track.logisticsImage -%}
-                            <img class="logistics-icon" src="{{ order_track.logisticsImage }}" alt="icon">
-                          {%- endif -%}
-                          <p>{{ order_track.logisticsName }}</p>
-                          <p>&nbsp;#{{ order_track.code }}</p>
-                        </div>
-                      {%- endif -%}
-
-                      <p class="logistics-updates-btn">
-                        See all updates
-                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu logistics-updates-icon" focusable="false" aria-hidden="true"><path d="M8 16a.999.999 0 0 1-.707-1.707l4.293-4.293-4.293-4.293a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5a.997.997 0 0 1-.707.293z"></path></svg>
-                      </p>
-                      <div>{{ order_track }}</div>
-                      <ul class="im-track-box">
-                        {% assign imTrack_list = order_track.imTrack %}
-                        {%- for imTrack in imTrack_list -%}
-                          <li class="im-track-item">
-                            <p class="im-track-date">{{ imTrack.time | date: "%m-%d %H:%M" }}</p>
-                            <p class="im-track-line-point"></p>
-                            <p class="im-track-content">{{ imTrack.remark }}</p>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    </div>
+                    {%- for order_track in order_tracking_list.value -%}                      
+                      <div class="fulfillment">
+                        <div>123：{{ order_track.createDate }}</div>
+                      
+                        {%- assign created_at = order_track.createDate | time_tag: format: 'date' -%}
+                        <span>{{ 'customer.order.fulfilled_at_html' | t: date: created_at }}</span>
+  
+                        {%- if order_track.linkUrl -%}
+                          <a href="{{ order_track.linkUrl }}" target="_blank">
+                            {{ 'customer.order.track_shipment' | t }}
+                          </a>
+                        {%- endif -%}
+  
+                        {%- if order_track.logisticsName -%}
+                          <div class="logistics-box">
+                            {%- if order_track.logisticsImage -%}
+                              <img class="logistics-icon" src="{{ order_track.logisticsImage }}" alt="icon">
+                            {%- endif -%}
+                            <p>{{ order_track.logisticsName }}</p>
+                            <p>&nbsp;#{{ order_track.code }}</p>
+                          </div>
+                        {%- endif -%}
+  
+                        <p class="logistics-updates-btn">
+                          See all updates
+                          <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu logistics-updates-icon" focusable="false" aria-hidden="true"><path d="M8 16a.999.999 0 0 1-.707-1.707l4.293-4.293-4.293-4.293a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5a.997.997 0 0 1-.707.293z"></path></svg>
+                        </p>
+                        
+                        <ul class="im-track-box">
+                          {% assign imTrack_list = order_track.imTrack %}
+                          {%- for imTrack in imTrack_list -%}
+                            <li class="im-track-item">
+                              <p class="im-track-date">{{ imTrack.time | date: "%m-%d %H:%M" }}</p>
+                              <p class="im-track-line-point"></p>
+                              <p class="im-track-content">{{ imTrack.remark }}</p>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      </div>
                     {%- endfor -%}
                   {%- endif -%}
                 </div>
