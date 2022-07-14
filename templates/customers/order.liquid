@@ -145,7 +145,6 @@
                           {%- for imTrack in imTrack_list -%}
                             <li class="im-track-item">
                               <p class="im-track-date">{{ imTrack.time | slice: 0, 10 | date: "%m-%d %H:%M %z" }}</p>
-                              <p class="im-track-date">{{ imTrack.time | slice: 0, 10 | date: "%x %X" }}</p>
                               <p class="im-track-line-point"></p>
                               <p class="im-track-content">{{ imTrack.remark }}</p>
                             </li>
