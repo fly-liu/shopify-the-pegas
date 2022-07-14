@@ -116,7 +116,9 @@
                   {%- if order_tracking_list != blank -%}
                     {%- for order_track in order_tracking_list.value -%}                      
                       <div class="fulfillment">                      
-                        {%- assign created_at = order_track.createDate | time_tag: format: 'date' -%}
+                        {%- assign created_at = order_track.createDate | slice: 0, -4 | time_tag: format: 'date' -%}
+                        <div>created_at:{{ created_at }}</div>
+                      <div>order_track.createDate:{{ order_track.createDate | slice: 0, -4 }}</div>
                         <span>{{ 'customer.order.fulfilled_at_html' | t: date: created_at }}</span>
   
                         {%- if order_track.linkUrl -%}
