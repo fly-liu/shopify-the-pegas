@@ -115,7 +115,7 @@
                   {% assign order_tracking_list = order.metafields.my_fields.tracking_detail %}
                   {%- if order_tracking_list != blank -%}
                     {%- for order_track in order_tracking_list.value -%}                      
-                      <div>order_track.createDate:{{ order_track.createDate | slice: 0, 5 }}</div>
+                      <div>order_track.createDate:{{ order_track.createDate | slice: 0, -1 }}</div>
                       <div class="fulfillment">                      
                         {%- assign created_at = order_track.createDate | slice: 0, 5 | time_tag: format: 'date' -%}
                         <div>created_at:{{ created_at }}</div>
