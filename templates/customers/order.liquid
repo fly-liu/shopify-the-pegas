@@ -117,8 +117,6 @@
                     {%- for order_track in order_tracking_list.value -%}                      
                       <div class="fulfillment">                      
                         {%- assign created_at = order_track.createDate | slice: 0, 10 | time_tag: format: 'date' -%}
-                        <div>created_at:{{ created_at }}</div>
-                      <div>order_track.createDate:{{ order_track.createDate | slice: 0, 10 }}</div>
                         <span>{{ 'customer.order.fulfilled_at_html' | t: date: created_at }}</span>
   
                         {%- if order_track.linkUrl -%}
@@ -146,7 +144,7 @@
                           {% assign imTrack_list = order_track.imTrack %}
                           {%- for imTrack in imTrack_list -%}
                             <li class="im-track-item">
-                              <p class="im-track-date">{{ imTrack.time | date: "%m-%d %H:%M" }}</p>
+                              <p class="im-track-date">{{ imTrack.time | slice: 0, 10 | date: "%m-%d %H:%M" }}</p>
                               <p class="im-track-line-point"></p>
                               <p class="im-track-content">{{ imTrack.remark }}</p>
                             </li>
