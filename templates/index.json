@@ -55,6 +55,24 @@
             "text_alignment_mobile": "center"
           }
         },
+        "a476cac8-341f-40ef-aa04-f62e9ab8ddce": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sneaker_1.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/collections\/alexander-mcqueen-sneaker",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "16552742430442e044-1": {
           "type": "slide",
           "settings": {
@@ -76,6 +94,7 @@
       },
       "block_order": [
         "16552742430442e044-0",
+        "a476cac8-341f-40ef-aa04-f62e9ab8ddce",
         "16552742430442e044-1"
       ],
       "settings": {
