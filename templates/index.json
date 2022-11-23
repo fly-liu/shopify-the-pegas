@@ -412,31 +412,31 @@
         "1655340954bc220c00-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Black_White_Minimalist_Festival_Coupon_3.png",
-            "title": "Moncler",
+            "image": "shopify:\/\/shop_images\/IMG_2770.jpg",
+            "title": "Celine",
             "text": "",
             "link_label": "Shop Now",
-            "link": "shopify:\/\/collections\/moncler-22fw"
+            "link": "shopify:\/\/collections\/celine"
           }
         },
         "1655340954bc220c00-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/56e8def2cc291750e347d72c8ff43f5a.jpg",
-            "title": "Maison Margiela",
+            "image": "shopify:\/\/shop_images\/IMG_2774.jpg",
+            "title": "Burberry",
             "text": "",
             "link_label": "Shop Now",
-            "link": "shopify:\/\/collections\/maison-margiela"
+            "link": "shopify:\/\/collections\/burberry"
           }
         },
         "1655340954bc220c00-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fe822d31d3bbc130cd657834297d2216.jpg",
-            "title": "Bottega Veneta",
+            "image": "shopify:\/\/shop_images\/IMG_2776.jpg",
+            "title": "Prada",
             "text": "",
             "link_label": "Shop Now",
-            "link": "shopify:\/\/collections\/bottega-veneta"
+            "link": "shopify:\/\/collections\/prada"
           }
         }
       },
