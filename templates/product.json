@@ -90,7 +90,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "<p>International Express Ship from {{ product.metafields.my_fields.boutique_country.value }}<\/p><p><\/p><p>{{ product.metafields.my_fields.final_sale.value }}<\/p>",
+            "content": "<p>International Express Shiping from {{ product.metafields.my_fields.boutique_country.value }} <\/p><p><\/p><p>{{ product.metafields.my_fields.final_sale.value }}<\/p>",
             "page": ""
           }
         },
