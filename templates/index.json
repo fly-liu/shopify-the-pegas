@@ -34,6 +34,82 @@
         "padding_bottom": 36
       }
     },
+    "a54ed904-dff8-4f23-be8d-b1ebd7c48d26": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16033114521851__a54ed904-dff8-4f23-be8d-b1ebd7c48d26-1669663023bffa6a54-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sale - Extra 15% off",
+            "heading_size": "h1"
+          }
+        },
+        "template--16033114521851__a54ed904-dff8-4f23-be8d-b1ebd7c48d26-1669663023bffa6a54-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Up to 50% off FW22 and earlier season<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16033114521851__a54ed904-dff8-4f23-be8d-b1ebd7c48d26-1669663023bffa6a54-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/sales-22-fall-winter"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033114521851__a54ed904-dff8-4f23-be8d-b1ebd7c48d26-1669663023bffa6a54-0",
+        "template--16033114521851__a54ed904-dff8-4f23-be8d-b1ebd7c48d26-1669663023bffa6a54-1",
+        "template--16033114521851__a54ed904-dff8-4f23-be8d-b1ebd7c48d26-1669663023bffa6a54-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sale_-_50.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "440b08fa-ff96-489a-8d01-ddc567b257bd": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "3ea20ec2-a036-4759-9e40-c945b16f494c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sale_-_50_540_x_540_px.gif",
+            "image_padding": true
+          }
+        },
+        "template--16033114521851__440b08fa-ff96-489a-8d01-ddc567b257bd-1669661198741ab520-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "3ea20ec2-a036-4759-9e40-c945b16f494c",
+        "template--16033114521851__440b08fa-ff96-489a-8d01-ddc567b257bd-1669661198741ab520-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1658817090d4025ca5": {
       "type": "collection-list",
       "blocks": {
@@ -358,7 +434,6 @@
         },
         "1655273782a935e16b-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
@@ -366,6 +441,7 @@
         },
         "1655273782a935e16b-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "About US",
             "button_link_1": "",
@@ -630,11 +706,41 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "7939b5b9-726d-4e23-99b6-e2e50f118b76": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "165381828200a6f4ae",
     "featured_collection",
+    "a54ed904-dff8-4f23-be8d-b1ebd7c48d26",
+    "440b08fa-ff96-489a-8d01-ddc567b257bd",
     "1658817090d4025ca5",
     "collage",
     "165527424347119651",
@@ -647,6 +753,7 @@
     "16553409548f5c6155",
     "165531910625f4ddcd",
     "1655317909f79139fb",
-    "1655319129de481c85"
+    "1655319129de481c85",
+    "7939b5b9-726d-4e23-99b6-e2e50f118b76"
   ]
 }
