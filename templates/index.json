@@ -113,6 +113,12 @@
     "1658817090d4025ca5": {
       "type": "collection-list",
       "blocks": {
+        "1658817090a21eac34-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "moncler-22fw"
+          }
+        },
         "1658817090a21eac34-0": {
           "type": "featured_collection",
           "settings": {
@@ -124,18 +130,12 @@
           "settings": {
             "collection": "alexander-mcqueen-sneaker"
           }
-        },
-        "1658817090a21eac34-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "max-mara"
-          }
         }
       },
       "block_order": [
+        "1658817090a21eac34-2",
         "1658817090a21eac34-0",
-        "1658817090a21eac34-1",
-        "1658817090a21eac34-2"
+        "1658817090a21eac34-1"
       ],
       "settings": {
         "title": "",
