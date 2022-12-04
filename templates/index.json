@@ -110,32 +110,32 @@
         "padding_bottom": 36
       }
     },
-    "20b8121d-9ff9-4359-b9de-01ac8e1cba66": {
+    "67c8e0e5-da75-4136-8b1a-d834351ddb92": {
       "type": "collection-list",
       "blocks": {
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1": {
+        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "moose-knuckles"
+            "collection": "balenciaga-track"
           }
         },
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0": {
+        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "celine"
+            "collection": "amiri-22ss"
           }
         },
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2": {
+        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "burberry"
+            "collection": "lanvin"
           }
         }
       },
       "block_order": [
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1",
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0",
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2"
+        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-0",
+        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-1",
+        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-2"
       ],
       "settings": {
         "title": "",
@@ -338,32 +338,32 @@
         "padding_bottom": 36
       }
     },
-    "67c8e0e5-da75-4136-8b1a-d834351ddb92": {
+    "20b8121d-9ff9-4359-b9de-01ac8e1cba66": {
       "type": "collection-list",
       "blocks": {
-        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-0": {
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "balenciaga-track"
+            "collection": "moose-knuckles"
           }
         },
-        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-1": {
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "amiri-22ss"
+            "collection": "celine"
           }
         },
-        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-2": {
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lanvin"
+            "collection": "burberry"
           }
         }
       },
       "block_order": [
-        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-0",
-        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-1",
-        "template--16033114521851__67c8e0e5-da75-4136-8b1a-d834351ddb92-1670133905e1d5ced2-2"
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1",
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0",
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2"
       ],
       "settings": {
         "title": "",
@@ -823,12 +823,12 @@
     "featured_collection",
     "440b08fa-ff96-489a-8d01-ddc567b257bd",
     "a54ed904-dff8-4f23-be8d-b1ebd7c48d26",
-    "20b8121d-9ff9-4359-b9de-01ac8e1cba66",
+    "67c8e0e5-da75-4136-8b1a-d834351ddb92",
     "collage",
     "165527424347119651",
     "16542981657da7dce1",
     "16553533042bf4538b",
-    "67c8e0e5-da75-4136-8b1a-d834351ddb92",
+    "20b8121d-9ff9-4359-b9de-01ac8e1cba66",
     "16542981431db10292",
     "165527334746bf979d",
     "1655273782dfb5557d",
