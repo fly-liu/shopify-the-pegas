@@ -34,6 +34,38 @@
         "padding_bottom": 36
       }
     },
+    "440b08fa-ff96-489a-8d01-ddc567b257bd": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "3ea20ec2-a036-4759-9e40-c945b16f494c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sale_-_50_540_x_540_px.gif",
+            "image_padding": true
+          }
+        },
+        "template--16033114521851__440b08fa-ff96-489a-8d01-ddc567b257bd-1669661198741ab520-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "3ea20ec2-a036-4759-9e40-c945b16f494c",
+        "template--16033114521851__440b08fa-ff96-489a-8d01-ddc567b257bd-1669661198741ab520-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "a54ed904-dff8-4f23-be8d-b1ebd7c48d26": {
       "type": "image-with-text",
       "blocks": {
@@ -78,69 +110,37 @@
         "padding_bottom": 36
       }
     },
-    "440b08fa-ff96-489a-8d01-ddc567b257bd": {
-      "type": "collage",
-      "disabled": true,
-      "blocks": {
-        "3ea20ec2-a036-4759-9e40-c945b16f494c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Sale_-_50_540_x_540_px.gif",
-            "image_padding": true
-          }
-        },
-        "template--16033114521851__440b08fa-ff96-489a-8d01-ddc567b257bd-1669661198741ab520-2": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "3ea20ec2-a036-4759-9e40-c945b16f494c",
-        "template--16033114521851__440b08fa-ff96-489a-8d01-ddc567b257bd-1669661198741ab520-2"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1658817090d4025ca5": {
+    "20b8121d-9ff9-4359-b9de-01ac8e1cba66": {
       "type": "collection-list",
       "blocks": {
-        "1658817090a21eac34-2": {
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "moncler-22fw"
+            "collection": "moose-knuckles"
           }
         },
-        "1658817090a21eac34-0": {
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "canada-goose"
+            "collection": "celine"
           }
         },
-        "1658817090a21eac34-1": {
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "alexander-mcqueen-sneaker"
+            "collection": "burberry"
           }
         }
       },
       "block_order": [
-        "1658817090a21eac34-2",
-        "1658817090a21eac34-0",
-        "1658817090a21eac34-1"
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1",
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0",
+        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "background-1",
         "show_view_all": false,
@@ -702,6 +702,46 @@
         "padding_bottom": 36
       }
     },
+    "1658817090d4025ca5": {
+      "type": "collection-list",
+      "blocks": {
+        "1658817090a21eac34-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "moncler-22fw"
+          }
+        },
+        "1658817090a21eac34-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canada-goose"
+          }
+        },
+        "1658817090a21eac34-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alexander-mcqueen-sneaker"
+          }
+        }
+      },
+      "block_order": [
+        "1658817090a21eac34-2",
+        "1658817090a21eac34-0",
+        "1658817090a21eac34-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1655319129de481c85": {
       "type": "collection-list",
       "blocks": {
@@ -776,54 +816,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "20b8121d-9ff9-4359-b9de-01ac8e1cba66": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "moose-knuckles"
-          }
-        },
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "celine"
-          }
-        },
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "burberry"
-          }
-        }
-      },
-      "block_order": [
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-1",
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-0",
-        "template--16033114521851__20b8121d-9ff9-4359-b9de-01ac8e1cba66-1670133905e1d5ced2-2"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "165381828200a6f4ae",
     "featured_collection",
-    "a54ed904-dff8-4f23-be8d-b1ebd7c48d26",
     "440b08fa-ff96-489a-8d01-ddc567b257bd",
-    "1658817090d4025ca5",
+    "a54ed904-dff8-4f23-be8d-b1ebd7c48d26",
+    "20b8121d-9ff9-4359-b9de-01ac8e1cba66",
     "collage",
     "165527424347119651",
     "16542981657da7dce1",
@@ -836,8 +836,8 @@
     "16553409548f5c6155",
     "165531910625f4ddcd",
     "1655317909f79139fb",
+    "1658817090d4025ca5",
     "1655319129de481c85",
-    "7939b5b9-726d-4e23-99b6-e2e50f118b76",
-    "20b8121d-9ff9-4359-b9de-01ac8e1cba66"
+    "7939b5b9-726d-4e23-99b6-e2e50f118b76"
   ]
 }
