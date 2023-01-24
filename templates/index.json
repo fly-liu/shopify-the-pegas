@@ -69,16 +69,16 @@
     "572e5a48-9415-4606-9fcf-05ddd7bef073": {
       "type": "collection-list",
       "blocks": {
+        "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sales-22-fall-winter"
+          }
+        },
         "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "alexander-mcqueen-white-sneaker-sales"
-          }
-        },
-        "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "whats-new-today"
           }
         },
         "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-2": {
@@ -89,8 +89,8 @@
         }
       },
       "block_order": [
-        "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-0",
         "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-1",
+        "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-0",
         "template--16033114521851__572e5a48-9415-4606-9fcf-05ddd7bef073-1670135995210ddd76-2"
       ],
       "settings": {
