@@ -154,10 +154,9 @@
           },
           "footer-2": {
             "type": "text",
-            "disabled": true,
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Business Information",
+              "subtext": "<p>Office Location: <\/p><p>2265 116th Ave NE, Suite 110<br\/>Bellevue WA 98004<br\/>United States<\/p><p>Office Hours: 9:00 am to 5:00 pm PST (M-F)<\/p><p>Contact: (503) 866-1228<\/p>"
             }
           }
         },
